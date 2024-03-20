@@ -114,8 +114,12 @@
 
 /* For small devices */
 @media screen and (max-width: 450px) {
+    .footer {
+        padding: 3rem 3% 1rem 3%;
+    }
+
     .footer__container {
-        padding: 2rem 1% 1rem 1%;
+        padding: 2rem 1% ;
     }
 
     .footer__title {
