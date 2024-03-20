@@ -55,8 +55,8 @@
     /* border: 1.5px solid rgb(106, 84, 187); */
 
     box-shadow: 
-                inset -4px -4px 4px rgba(255, 255, 255, 0.02),
-                inset 4px 4px 4px var(--black-color);
+                -4px -4px 4px rgba(255, 255, 255, 0.02),
+                4px 4px 4px var(--black-color);
 }
 
 .skill-icon img {
