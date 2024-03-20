@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.a81034b3.css",
+    "main.js": "/my-website/static/js/main.77892dd3.js",
+    "static/js/885.1ac849e8.chunk.js": "/my-website/static/js/885.1ac849e8.chunk.js",
+    "static/js/453.86edb24c.chunk.js": "/my-website/static/js/453.86edb24c.chunk.js",
+    "static/media/remixicon.svg?t=1708865856766": "/my-website/static/media/remixicon.7735fab8dbf8ff78afe9.svg",
+    "static/media/hero.png": "/my-website/static/media/hero.39c572ce897d1f93edf0.png",
+    "static/media/remixicon.eot?t=1708865856766": "/my-website/static/media/remixicon.8542c1bb279bcd77063a.eot",
+    "static/media/remixicon.ttf?t=1708865856766": "/my-website/static/media/remixicon.4c942de19d980993f612.ttf",
+    "static/media/joben-landing-page.png": "/my-website/static/media/joben-landing-page.c9c326d395c606d37a53.png",
+    "static/media/Landing Page - Sneakers.png": "/my-website/static/media/Landing Page - Sneakers.4fc3839232b43cfec121.png",
+    "static/media/remixicon.woff?t=1708865856766": "/my-website/static/media/remixicon.28ceff39ee3e17dc99db.woff",
+    "static/media/portofolio-project-1.png": "/my-website/static/media/portofolio-project-1.8e5f672e6744e31bfa22.png",
+    "static/media/remixicon.woff2?t=1708865856766": "/my-website/static/media/remixicon.39f4def56d0e8712909a.woff2",
+    "static/media/telegram.png": "/my-website/static/media/telegram.a3fce56b328673872588.png",
+    "static/media/Valorant - Gaming Sound Effects click.mp3": "/my-website/static/media/Valorant - Gaming Sound Effects click.7386ff69420364bed14e.mp3",
+    "static/media/mail.png": "/my-website/static/media/mail.7ce7756fcad60fe6f568.png",
+    "static/media/Valorant - Choose Gaming Sound Effect.mp3": "/my-website/static/media/Valorant - Choose Gaming Sound Effect.dac5214e026c20cd8205.mp3",
+    "index.html": "/my-website/index.html",
+    "main.a81034b3.css.map": "/my-website/static/css/main.a81034b3.css.map",
+    "main.77892dd3.js.map": "/my-website/static/js/main.77892dd3.js.map",
+    "885.1ac849e8.chunk.js.map": "/my-website/static/js/885.1ac849e8.chunk.js.map",
+    "453.86edb24c.chunk.js.map": "/my-website/static/js/453.86edb24c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a81034b3.css",
+    "static/js/main.77892dd3.js"
+  ]
+}
