@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.f16f2274.css",
+    "main.css": "/my-website/static/css/main.f65123c7.css",
     "main.js": "/my-website/static/js/main.77892dd3.js",
     "static/js/885.1ac849e8.chunk.js": "/my-website/static/js/885.1ac849e8.chunk.js",
     "static/js/453.86edb24c.chunk.js": "/my-website/static/js/453.86edb24c.chunk.js",
@@ -18,13 +18,13 @@
     "static/media/mail.png": "/my-website/static/media/mail.7ce7756fcad60fe6f568.png",
     "static/media/Valorant - Choose Gaming Sound Effect.mp3": "/my-website/static/media/Valorant - Choose Gaming Sound Effect.dac5214e026c20cd8205.mp3",
     "index.html": "/my-website/index.html",
-    "main.f16f2274.css.map": "/my-website/static/css/main.f16f2274.css.map",
+    "main.f65123c7.css.map": "/my-website/static/css/main.f65123c7.css.map",
     "main.77892dd3.js.map": "/my-website/static/js/main.77892dd3.js.map",
     "885.1ac849e8.chunk.js.map": "/my-website/static/js/885.1ac849e8.chunk.js.map",
     "453.86edb24c.chunk.js.map": "/my-website/static/js/453.86edb24c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f16f2274.css",
+    "static/css/main.f65123c7.css",
     "static/js/main.77892dd3.js"
   ]
 }
