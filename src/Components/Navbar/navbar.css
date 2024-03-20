@@ -1,0 +1,234 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding: .5rem 0;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    width: 5.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: .5rem;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.logo__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(90deg,
+                var(--second-color) 0%,
+                var(--first-color) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav__item {
+    display: inline-block;
+    margin: 5px 2.5rem;
+}
+
+.nav__link {
+    font-size: .9rem;
+    font-weight: var(--font-600);
+    color: hsl(0, 0%, 71%);
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: var(--color-torqu);
+}
+
+.nav__btn {
+    display: inline-block;
+    color: var(--white-color);
+    background: linear-gradient(95deg,
+                var(--second-color) 0%,
+                var(--first-color) 100%);
+    padding: .8rem 1.5rem;
+    transition: box-shadow .2s;
+}
+
+.nav__btn:hover {
+    box-shadow: 
+                inset -5px -5px 5px hsla(233, 39%, 13%, 0.300),
+                inset 5px 5px 5px hsla(233, 39%, 13%, 0.300);
+}
+
+.nav__toggle,
+.nav__close {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+/* ANIMATION KEYFRAMES */
+/* @keyframes logo-images {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE =================================================================================*/
+@media screen and (max-width: 1450px) {
+    .logo__text {
+        font-size: 1.5rem;
+    }
+
+    .nav__item {
+        margin: 5px 2rem;
+    }
+    
+    .nav__link {
+        font-size: .7rem;
+    }
+
+    .nav__btn {
+        padding: .6rem 1.2rem;
+    }
+
+    .text__btn {
+        font-size: .8rem;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .container {
+        padding: 0;
+    }
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 5% 3%;
+        justify-content: flex-start;        
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: .2s ease-in-out;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .nav__active {
+        transform: translateX(0);
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__list {
+        display: grid;
+        align-items: center;
+        row-gap: 2.5rem;
+        padding: 2rem 0;
+    }
+
+    .nav__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav__link {
+        align-items: end;
+        text-align: end;
+        color: var(--white-color);
+        font-weight: var(--font-400);
+        font-size: 1.5rem;
+        padding: 1rem 0 ;
+        /* background-color: var(--active-color); */
+    }
+
+    .nav__toggle,
+    .nav__close {
+    display: flex;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-600);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    }
+
+    .nav__active ~
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link:before {
+        display: none;
+    }
+
+    .text__btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding: .2rem .5rem;
+    }
+
+    .logo__images {
+        width: 2.5rem;
+    }
+    
+    .logo__text {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+
+    .nav__btn {
+        padding: .5rem 1rem;
+    }
+
+    .nav__btn:hover {
+        box-shadow: none;
+    }
+
+    .nav__btn:active {
+        box-shadow: 
+                    inset -5px -5px 5px hsla(233, 39%, 13%, 0.300),
+                    inset 5px 5px 5px hsla(233, 39%, 13%, 0.300);
+    }
+}

@@ -1,0 +1,305 @@
+/*========== GOGGLE FONTS  ORBITRON   ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+:root {
+
+    --header-height: 4rem;
+
+    --orbitron-font: "Orbitron", sans-serif;
+
+
+/*========== COLORS =========================================================================*/
+/*Colors mode HSL(hue, saturation, lightness)*/
+    --header-height: 3.5rem;
+
+    --first-color: hsl(203, 71%, 60%);
+    --first-color-light: hsl(203, 71%, 60%, 0.3);
+    
+    /* --second-color: hsl(277, 56%, 68%); */
+    /* OR */
+    --second-color: hsl(253, 43%, 52%);
+    --second-color-light: hsl(253, 43%, 52%, 0.3);
+
+    --three-color: hsl(253, 43%, 52%);
+    --text-color: hsl(203, 8%, 98%);
+    --text-color-light: hsl(203, 8%, 80%);
+    --body-color: hsl(260, 20%, 18%);
+
+    --black-color:hsl(0, 0%, 2%);
+    --white-color:hsl(203, 8%, 98%);
+
+
+/* BACKGROUND COLOR ===========================================================================*/
+    --bg-primary: linear-gradient(90deg, hsl(252, 98%, 79%) 0%, hsl(253, 74%, 64%) 100%);
+    --bg-back: hsl(246, 70%, 5%);
+    --bg-back-nav: hsl(247, 69%, 5%);
+
+    --background: #0d0b13;
+
+/*.5rem = 8px |  1rem = 16px ...*/
+/* --big-font-size: 3.5rem; */
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.775rem;
+    --tiny-font-size: 0.655rem;
+
+
+/*========== Font Weight ======================================================================*/
+    --font-400: 400;
+    --font-500: 500;
+    --font-600: 600;
+    --font-700: 700;
+    --font-800: 800;
+    --font-900: 900;
+
+
+
+/*========== Font Weight ======================================================================*/
+    --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+
+  /* --box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, 0.30); */
+
+  /* --border-line: 1px solid hsla(0, 0%, 9%, 0.187); */
+    --border-line: 1px solid hsla(0, 0%, 100%, 0.300);
+    --shape-line: hsla(0, 0%, 9%, 0.187);
+  /* --border-line: 1px solid hsla(0, 0%, 100%, 0.30); */
+
+
+/*========== Border Radius ==================================================================*/
+    --border-radius: .5rem;
+    --radius-20: 20px;
+    --border-btn: .2rem;
+
+/*========== Z-Index ========================================================================*/
+    --z-1: 1;
+    --z-10: 10;
+    --z-fixed: 100;
+
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background: var(--background);
+
+    /* background: #14172e; */
+
+    letter-spacing: 1px;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--orbitron-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-400);
+}
+
+textarea {
+    resize: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-weight: var(--font-500);
+    letter-spacing: 2px;
+    border-radius: 4px;
+    /* clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 0 100%, 0 0); */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+/* CONTAINER ==================================================================================*/
+.main {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-inline: 1.5rem;
+}
+
+
+
+
+
+/* TITLE NAME =================================================================================*/
+.title-name-section {
+    position: relative;
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+
+/* NUMBER PAGE ================================================================================*/
+.number__page__home {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    padding: 2% 2%;
+}
+
+.number__page {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    padding-left: 1rem;
+}
+
+.text__page {
+    position: relative;
+    display: flex;
+    padding-left: 15px;
+    font-size: .9rem;
+}
+
+.text__page::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    background: var(--white-color);
+    animation: text-page 1s infinite ease-in-out;
+}
+
+@keyframes text-page {
+    0%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+.title-name-section {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.title-name-section::before {
+    height: 1.9rem;
+    width: 1.9rem;
+}
+
+.text__page {
+    font-size: .7rem;
+}
+
+.text__page::before {
+    height: 5px;
+    width: 5px;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+.title-name-section {
+    font-size: 1.5rem;
+}
+
+.title-name-section::before {
+    top: -3px;
+    left: -5px;
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.text__page {
+    padding-left: 12px;
+    font-size: .7rem;
+}
+
+.text__page::before {
+    top: 45%;
+    left: 0;
+    height: 4px;
+    width: 4px;
+}
+}
+
+
+@media screen and (max-width: 375px) {
+.text__page {
+    padding-left: 10px;
+    font-size: .6rem;
+}
+
+.text__page::before {
+    top: 40%;
+    left: 0;
+}
+
+.number__page {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.title-name-section::before {
+    top: -3px;
+    left: -5px;
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.title-name-section {
+    /* font-size: 1.2rem; */
+}
+
+}

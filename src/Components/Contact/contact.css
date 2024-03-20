@@ -1,0 +1,72 @@
+.contact {
+    position: relative;
+    height: 100%;
+}
+
+.contact__container {
+    position: relative;
+    padding: 6rem 3%;
+}
+
+.contact__container::after,
+.contact__container::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    /* background: hsl(251, 69%, 65%); */
+    /* background: var(--three-color); */
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.contact__container::after {
+    top: 0rem;
+    left: -5rem;
+}
+
+.contact__container::before {
+    /* background: hsl(251, 69%, 65%); */
+    bottom: -1rem;
+    right: 0;
+}
+
+.contact__content {
+    display: flex;
+    padding-top: 3rem;
+    gap: 3rem;
+}
+
+
+/* RESPONSIVE =================================================================================*/
+@media screen and (max-width: 1500px) {
+    .contact__container {
+        padding: 4rem 2%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact__content {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .contact__content {
+        padding-top: 1rem;
+    }
+
+    .contact__container::after {
+        top: 0;
+        left: 0;
+    }
+    
+    .contact__container::before {
+        bottom: 0;
+        right: 0;
+    }
+}
+

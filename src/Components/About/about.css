@@ -1,0 +1,120 @@
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__container {
+    position: relative;
+    width: 100%;
+    padding: 7rem 3%;
+}
+
+.about__container::after,
+.about__container::before {
+    content: '';
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20.125rem;
+    /* background: hsl(253, 35%, 29%); */
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.about__container::after {
+    top: 0rem;
+    left: -5rem;
+}
+
+.about__container::before {
+    /* background: hsl(250, 76%, 66%); */
+    bottom: -1rem;
+    right: 0;
+}
+
+.skills__content {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3rem;
+    gap: 3rem;
+}
+
+.skills__item {
+    flex: 1;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills__info {
+    flex: 1;
+}
+
+
+/* RESPONSIVE =============================================================================*/
+@media screen and (max-width: 1500px) {
+    .about__container {
+        padding: 5rem 2%;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .skills__item {
+        padding-left: 1rem;
+    }
+
+    .skills__item,
+    .skills__content {
+        grid-gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .skills__content {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .skills__item,
+    .skills__info {
+        width: 100%;
+    }
+
+    .skills__container::after, 
+    .skills__container::before {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .about__container::after,
+    .about__container::before {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        filter: blur(14.063rem);
+    }
+
+    .about__container::after {
+        top: 0;
+        left: 0;
+    }
+
+    .about__container::before {
+        background: hsl(284, 43%, 52%);
+        bottom: 0;
+        right: 0;
+    }
+
+    .skills__content {
+        padding-top: 1rem;
+    }
+}
