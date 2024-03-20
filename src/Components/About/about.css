@@ -95,7 +95,7 @@
 
 
 @media screen and (max-width: 450px) {
-    .about__container::after,
+    /* .about__container::after,
     .about__container::before {
         width: 15rem;
         height: 15rem;
@@ -106,13 +106,7 @@
     .about__container::after {
         top: 0;
         left: 0;
-    }
-
-    .about__container::before {
-        background: hsl(284, 43%, 52%);
-        bottom: 0;
-        right: 0;
-    }
+    } */
 
     .skills__content {
         padding-top: 1rem;

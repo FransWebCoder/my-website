@@ -236,7 +236,6 @@
         width: 15rem;
         height: 15rem;
         border-radius: 50%;
-        background: hsl(251, 69%, 65%);
         filter: blur(14.063rem);
     }
 
@@ -246,7 +245,6 @@
     }
 
     .project__container::before {
-        background: var(--color-torqu);
         bottom: 0;
         right: 0;
     }
