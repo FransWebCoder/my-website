@@ -1,7 +1,7 @@
 // PROJECT ITEM
 import Project1 from '../../src/Assets/Work/Landing Page - Sneakers.png'
-import Project2 from '../../src/Assets/Work/joben-landing-page.png'
-import Project3 from '../../src/Assets/Work/joben-landing-page.png'
+import Project2 from '../../src/Assets/Work/Landing Page - Metaverse1.png'
+import Project3 from '../../src/Assets/Work/Landing Page - Nftweb1.png'
 import Project4 from '../../src/Assets/Work/joben-landing-page.png'
 import Project5 from '../../src/Assets/Work/portofolio-project-1.png'
 import Project6 from '../../src/Assets/Work/joben-landing-page.png'
